@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form and table</title>
+</head>
+<body>
+<div align="center">
+<form style="width: 21%"; align="left">
+  <fieldset>
+     <legend text-align="center">Персональна Інформація</legend>
+         <div>
+            <label for="name">Ім'я</label><br>
+            <input type="text" id="name" name="Name" required>
+         </div>
+         <div>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="Email" required>
+         </div>
+         <div>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="Password" required>
+         </div>
+         <div>
+            <label for="confirm password">Confirm Password</label><br>
+            <input type="password" id="confirm password" name="Confirm password" required >
+         </div>
+         <div>
+            <label for="sex">Стать</label><br>
+            <input type="radio" id="male" name="sex" id="male">Male<br>
+            <input type="radio" id="female" name="sex" value="female">Female<br>
+         </div>
+         <div>
+            <label for="address">Адреса</label><br>
+            <textarea type="address" id="address" name="Address"></textarea>
+         </div>
+         <button type="submit" id="btn">реєстрація</button>
+  </fieldset>
+</form>
+</div>
+<div align="center">
+   <table>
+     <caption>Free Coding Resources</caption>
+           <colgroup span="3">
+               <col width="200px">
+               <col width="500px">
+               <col width="200xp">
+             <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Subject</th>
+                  <th>Marks</th>
+                 </tr>
+             </thead>
+             <tbody>
+                <tr>
+                   <td rowspan="2">Hillary</td>
+                   <td>Advanced Web</td>
+                   <td>75</td>
+                </tr>
+                <tr>
+                   <td>Operating System</td>
+                   <td>60</td>
+                </tr>
+                <tr>
+                   <td rowspan="2">Lary</td>
+                   <td>Advanced Web</td>
+                   <td>80</td>
+                </tr>
+                <tr>
+                   <td>Operating System</td>
+                   <td>75</td>
+                </tr>
+             </tbody>
+             <tfoot>
+                <tr>
+                   <td></td>
+                   <td>Total Average: 72.5</td>
+                   <td></td>
+               </tr>
+             </tfoot>
+           </colgroup>
+   </table>
+ </div>
+</body>    
+</html>
+<style>
+   table,th,tr {
+      border:1px solid#000
+   }
+   form {
+      margin: auto;
+   }
+   table {
+      margin-top: 50px;
+   }
+ </style>

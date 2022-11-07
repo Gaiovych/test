@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <form>
+    <fieldset>
+            <h1>Форма Контактів</h1>
+            <p><small>Опис полів</small></p>
+            <div>
+                <input type="text" id="your name" placeholder="Ваше ім'я" text-height="small"/><br>
+                <input type="text" id="email" placeholder="Ваш Email"/><br>
+                <input type="numbers" id="telephone" placeholder="Ваш телефон"/><br>
+                <input type="text" id="weblink" placeholder="Посилання на веб-сайт"/><br>
+            </div>
+                <textarea type="text" id="message" placeholder="Напишіть ваше повідомлення тут..."></textarea><br>
+                <button type="submit">Надіслати</button>     
+    </fieldset>
+    </form>
+</body>
+</html>
+<style>
+  fieldset {
+    width: 20%;
+    margin: auto;
+    background-color:lightgray;
+  }
+  button {
+   background-color: blue;
+   color: white;
+   width: 100%;
+ }
+  textarea {
+    text-align: left;
+    height: 50px;
+    width: 100%;
+    resize:none;
+    margin-bottom: 10px;
+ }
+   h1 {
+       text-align: left;
+       color: gray;
+   }
+   p {
+       color: gray;
+   }
+   input {
+       width: 100%;
+       margin-bottom: 10px;
+   }
+</style>

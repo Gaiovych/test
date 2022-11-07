@@ -1,0 +1,58 @@
+<html>
+    <form>
+      <fieldset>
+        <head>
+            <link rel="preconnect" href="https://fonts.googleapis.com"> 
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <h1>Форма Контактів</h1>
+            <p><small>Опис полів</small></p>
+            <div>
+                <input type="text" id="your name" placeholder="Ваше ім'я" text-height="small" autofocus required/><br>
+                <input type="text" id="email" placeholder="Ваш Email" required/><br>
+                <input type="numbers" id="telephone" placeholder="Ваш телефон"required/><br>
+                <input type="text" id="weblink" placeholder="Посилання на веб-сайт"/><br>
+            </div>
+                <textarea type="text" id="message" placeholder="Напишіть ваше повідомлення тут..."></textarea><br>
+                <button type="submit">Надіслати</button>    
+        </body>
+      </fieldset>
+    </form>
+</html>
+<style>
+  fieldset {
+   width: 20%;
+   background-color:lightgray;
+  }
+  input:focus, textarea:focus {
+      border-color: rgb(32, 137, 178);
+  }
+  button {
+   background-color: blue;
+   color: white;
+   width: 100%;
+ }
+  button:hover {
+    background-color: rgb(32, 122, 178);
+ }
+  textarea {
+    text-align: left;
+    height: 50px;
+    width: 100%;
+    resize:none;
+    margin-bottom: 10px;
+ }
+   h1 {
+       text-align: left;
+       color: gray;
+   }
+   p {
+       color: gray;
+   }
+   input {
+       width: 100%;
+       margin-bottom: 10px;
+   }
+</style>

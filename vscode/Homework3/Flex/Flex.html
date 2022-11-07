@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-layout</title>
+</head>
+<body>
+    <div class="flex">
+        <header class="header">Header</header>
+        <div class="sidebar">Sidebar</div>
+        <main class="main">Main</main>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>
+<style>
+    .html {
+    width: 100%;
+}
+.flex {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+.header {
+    position: sticky;
+    min-height: 50px;
+    min-width: 300px;
+    background: turquoise;
+}
+.sidebar {
+    position: absolute;
+    left: 0;
+    top:0;
+    bottom:0;
+    background-color: rgb(159, 74, 159);
+}
+.main {
+    min-height: 400px;
+    min-width: 300px;
+    background-color: pink;
+}
+.footer {
+    min-height: 50px;
+    min-width: 300px;
+    background-color: rgb(245, 243, 125);
+}
+@media(max-width:480px) {
+    .sidebar{
+        position: sticky;
+    }
+}
+</style>
